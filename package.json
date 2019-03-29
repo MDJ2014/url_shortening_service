@@ -1,0 +1,28 @@
+{
+  "name": "url_shortening_service",
+  "version": "1.0.0",
+  "description": "url shortening microservice",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MDJ2014/url_shortening_service.git"
+  },
+  "author": "Mark Jones",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MDJ2014/url_shortening_service/issues"
+  },
+  "homepage": "https://github.com/MDJ2014/url_shortening_service#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.20",
+    "nodemon": "^1.18.10",
+    "shortid": "^2.2.14",
+    "valid-url": "^1.0.9"
+  }
+}

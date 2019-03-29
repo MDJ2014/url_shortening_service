@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URL Shortening Service</title>
+    <meta name="" content="A cool thing made with HyperDev">
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+
+  <body>
+  
+
+ 
+
+<h2>URL Shortening Microservice</h2>
+<h3>To use</h3>
+<p>1. You can POST a URL to [project_url]/api/shorturl/new and you will receive a shortened URL in the JSON response.
+    Example : {"original_url":"www.google.com","short_url":1}</p>
+<p>2. If you pass an invalid URL that doesn't follow the http(s)://www.example.com(/more/routes) format, the JSON response will contain an error like {"error":"invalid URL"}
+</p>
+<p>3. When you visit the shortened URL, it will redirect you to your original link.</p>
+<br/>
+<h2>Short URL Creation</h2>
+<p>example POST: [project_url]/api/shorturl/new - https://www.google.com</p>
+<p id="formBox">
+<form method="POST" action="/api/shorturl/new">
+  URL to be shortened:   <input id="textbox" type="text" name="originalUrl" placeholder="enter valid url"/>
+  <input type="submit" value="Post URL">
+</form>
+
+</p>
+
+<h3>Example Usage</h3>
+<p>[project_url]/api/Zu-raTXfk</p>
+<h3>Will redirect to:</h3>
+<p>https://freecodecamp.com</p>
+
+
+
+
+
+
+
+  </body>
+</html>
