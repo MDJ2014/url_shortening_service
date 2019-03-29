@@ -19,7 +19,11 @@ app.use(cors({optionSuccessStatus: 200}));  // some legacy browsers choke on 204
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect("mongodb://localhost:27017/urlshortner");
+const MONGODB_URI = "mongodb://heroku_39tkbvdj:jt2sppfuquiqi647j5c2sg3rrb@ds151863.mlab.com:51863/heroku_39tkbvdj";
+
+//mongoose.connect("mongodb://localhost:27017/urlshortner");
+mongoose.connect(MONGODB_URI);
+
 
 var db = mongoose.connection;
 
